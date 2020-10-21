@@ -1,4 +1,4 @@
-// 💥 All We Need To Know About String
+// 💥 All We Need To Know About Substring() 💥
 
 //1. The substring() method returns the part of the string between the start and end indexes,
 //str.substring(indexStart, indexEnd)
@@ -25,4 +25,4 @@ console.log("string5 ==> ", string.substring(6, 3)); //are
 console.log("string6 ==> ", string.substring(-6, 9)); // We are a
 //-6 becomes 0, so the output is from 0 to 9 index, not including 9
 console.log("string ==> ", string.substring(6, "a")); // We are
-//"a" becomes 0
+//"a" becomes 0, and beacause 6 > 0, so they have been swtiched, so the output is from 6 to 0,
