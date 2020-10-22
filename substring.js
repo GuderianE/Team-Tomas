@@ -1,7 +1,7 @@
 // 💥 All We Need To Know About Substring() 💥
 
 //1. The substring() method returns the part of the string between the start and end indexes,
-//str.substring(indexStart, indexEnd)
+//the method writen like this: str.substring(indexStart, indexEnd)
 let string = "We are a cool team!";
 console.log("string length==> ", string.length); // 19
 console.log("string1 ==> ", string.substring(0, 6)); // We are
@@ -24,5 +24,9 @@ console.log("string5 ==> ", string.substring(6, 3)); //are
 //6. If either argument is negative or is NaN, it is treated as if it were 0.
 console.log("string6 ==> ", string.substring(-6, 9)); // We are a
 //-6 becomes 0, so the output is from 0 to 9 index, not including 9
-console.log("string ==> ", string.substring(6, "a")); // We are
-//"a" becomes 0, and beacause 6 > 0, so they have been swtiched, so the output is from 6 to 0,
+console.log("string6 ==> ", string.substring(6, "a")); // We are
+//"a" becomes 0, and beacause 6 > 0, so they have been switched, the output is from 0 to 6,
+
+// The last thing to know is that substring() method only works on string, not other data types
+// let number = 9999;
+// console.log("string number ==> ", number.substring(0, 4)); // TypeError: number.substring is not a function
