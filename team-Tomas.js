@@ -1,3 +1,15 @@
+// - Mathematical Expressions
+// **String Methods
+//   - substring()
+//   - substr()
+//   - replace()
+//   - toUpperCase()
+//   - toLowerCase()
+//   - trim()
+//   - charAt()
+//   - charCodeAt()
+
+
 // + Addition 
 // The addition operator works the same way as we know it from math it joins together two variables or more and returns the sum or concats variable strings.
 let x = 4;
@@ -38,6 +50,8 @@ let y4 = 6;
 let sum4 = x % y;
 console.log(sum4);// 4
 
+// 4 ** 6
+
 
 /*=============================================
 =                   substring()                   =
@@ -73,7 +87,9 @@ console.log("string6 ==> ", string.substring(-6, 9)); // We are a
 //-6 becomes 0, so the output is from 0 to 9 index, not including 9
 console.log("string ==> ", string.substring(6, "a")); // We are
 //"a" becomes 0, and beacause 6 > 0, so they have been swtiched, so the output is from 6 to 0,
+// let number1 = 7777777;
 
+// console.log("string ==> ", number1.substring(3, 6)); 
 /*=============================================
 =                   substr()                   =
 =============================================*/
@@ -92,19 +108,19 @@ The substr() method does not change the original string.*/
 
 // ==> Length = used optional. Gives the number of characters to extract. If length is 0 or negative, an  empty string is returned
 
-let string = "Hello World";
+let string1 = "Hello World";
 
-console.log("example 1:", string.substr(2, 5)); // llo W
+console.log("example 1:", string1.substr(2, 5)); // llo W
 
-console.log("example 2:", string.substr(1, 7)); // ello Wo
+console.log("example 2:", string1.substr(1, 7)); // ello Wo
 
 // length of 0
-console.log("example without length:", string.substr(4, 0)); // empty - cause length = 0
+console.log("example without length:", string1.substr(4, 0)); // empty - cause length = 0
 
 //------------------------------------------------------
 // example without set length parameter ==>  returns the rest of the string start from the index of the first character to Include.
 
-console.log("example no length:", string.substr(6)); // World
+console.log("example no length:", string1.substr(6)); // World
 
 //! NOTE
 // To extract characters from the end of the string, use a negative start number
@@ -126,19 +142,20 @@ console.log("example negative start:", string2.substr(-3, 2)); // 00
 matches of a pattern replaced by a replacement */
 
 let s = "hello, World";
-console.log("s ==>", s);
+console.log("s ==>", s);// s ==> hello, World
 
 s.replace("h", "H");
-console.log("s ==>", s);
+console.log("s ==>", s);// s ==> hello, World
 
 // STRINGS ARE IMMUTABLE IN JAVASCRIPT
 // Methods like replace() or toUpperCase() return new strings, they DO NOT MODIFY the string
 // on which they are invoked.
 
-// let n = s.replace("h", "H");
-// console.log("n ==>", n);
+let n = s.replace("h", "H");
+console.log("n ==>", n);// n ==> Hello, World
 
-// console.log("replaced ==>", s.replace("h", "H"));
+console.log("replaced ==>", s.replace("h", "H"));// replaced ==> Hello, World
+console.log("case sensitive ", s.replace("R","$"));// case sensitive  hello, World
 
 
 
@@ -185,6 +202,15 @@ function capitalizeFirstLetter(string) {
 
 const mySentence = "This is an example of the power of toUpperCase";
 const words = mySentence.split(" ");
+ console.log(words); //[ 'This',
+// 'is',
+// 'an',
+// 'example',
+// 'of',
+// 'the',
+// 'power',
+// 'of',
+// 'toUpperCase' ]
 
 words.map((word) => { 
     return word[0].toUpperCase() + word.substring(1); 
