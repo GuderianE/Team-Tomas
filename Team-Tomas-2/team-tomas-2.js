@@ -96,7 +96,7 @@ statement
 A statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a block statement ({ ... }) to group those statements. To execute no statement within the loop, use an empty statement (;).
 */
 
-/ Nested For loops
+// Nested For loops
 
 
 // A nested For loop is a loop inside another loop and it can be any number of loops be it for loop, while loop, 
@@ -122,7 +122,7 @@ for (let i = 0; i < 3; i++) {
 }
 
 // each number repeated 9 times from 4 to 0
-// The reson for this is since the outer loop always runs first it will iterate from 4 to 0 and then stop. After that the inner loop fires and iterates over the existing numbers and depending on which variable we print inside the inner loop we get two different outcomes.
+// The reason for this is since the outer loop always runs first it will iterate from 4 to 0 and then stop. After that the inner loop fires and iterates over the existing numbers and depending on which variable we print inside the inner loop we get two different outcomes.
 for (let i = 4; i >= 0; --i) {
     for (let j = 0; j < 10; j++) {
         console.log(j); // 444444444 333333333 222222222 111111111 000000000
