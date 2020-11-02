@@ -10,7 +10,6 @@
 
 // toString()
 // array.toString() ==> simply returns a string with all the array values, separated by commas.
-//! This method will not change the original array. ==> which means the original array still there
 
 //1.  Do not take any argument
 //2.  Return one new string
@@ -29,9 +28,8 @@ const array3 = [1, 33, 44, true, "Alex", ["A", "B", false]];
 const arrayToString3 = array3.toString();
 console.log("arrayToString3 ==>", arrayToString3); //1,33,44,true,Alex,A,B,false ==> one string
 
-//! This method will not change the original array. ==> which means the original array still there
+//! Note: This method will not change the original array. ==> which means the original array still there
+// Not like other array methodes which modify the original array such as array.splice(), array.push() ...
 const array4 = [1, 33, 44, true, "Alex", ["A", "B", false]];
-array4.toString();
+array4.toString(); // Not changing the original array, a new variable is needed here in order to get the new string.
 console.log("arrayToString3 ==>", array4); // [ 1, 33, 44, true, 'Alex', [ 'A', 'B', false ] ]
-
-// not like other array methodes which modify the original array such as array.splice(), array.push()
