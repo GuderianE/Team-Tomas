@@ -1,3 +1,9 @@
+// 1- for loop
+// 2- concat()
+// 3- indexOf()
+// 4- join()
+// 5- toString()
+
 
 // For loops
     //What are they? Why are they?
