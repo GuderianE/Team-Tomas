@@ -67,6 +67,16 @@ for (i = 1; i < 10; i++) {
 // this number is even:  8
 // this number is odd:  9
 
+const isThereAnyGold = ["silver", "umbrella", "metal", "tiny stones"];
+for (i = 0; i < isThereAnyGold.length; i++) { 
+    if (isThereAnyGold[i] == "gold") {
+    console.log("You found gold"); 
+} else if (isThereAnyGold[i] == "silver") {
+    console.log("At least you found some silver");
+} else {
+    console.log("You did not find anything cool.")
+}
+}
 
 
 // Syntax:
